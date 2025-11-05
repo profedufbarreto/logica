@@ -3,17 +3,10 @@
 
 int main(){
 
-    int a, b, soma;
+    int meuNumero = 11;
+    char minhaLetra = 'E';
 
-    printf("\nDigite um valor para a: \n");
-    scanf("%d", &a);
-
-    printf("\nDigite um valor para b: \n");
-    scanf("%d", &b);
-
-    soma = a + b;
-
-    printf("\n\nO resultado da soma é: \n%d\n ", soma);
+    printf("O meu número é %d e minha letra é %c ", meuNumero, minhaLetra);
 
     return 0;
 }
