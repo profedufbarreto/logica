@@ -1,14 +1,19 @@
 #include<stdio.h>
 
+
 int main(){
 
     int a, b, soma;
 
-    a = 4;
-    b = 2;
+    printf("\nDigite um valor para a: \n");
+    scanf("%d", &a);
+
+    printf("\nDigite um valor para b: \n");
+    scanf("%d", &b);
+
     soma = a + b;
 
-    printf("O resultado de soma e igual a %d\n ", soma);
+    printf("\n\nO resultado da soma é: \n%d\n ", soma);
 
     return 0;
 }
