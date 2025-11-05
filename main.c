@@ -3,10 +3,9 @@
 
 int main(){
 
-    int meuNumero = 11;
-    char minhaLetra = 'E';
-
-    printf("O meu número é %d e minha letra é %c ", meuNumero, minhaLetra);
+    int x = 5, y = 6, z = 50;
+    
+    printf("%d", x + y + z);
 
     return 0;
 }
