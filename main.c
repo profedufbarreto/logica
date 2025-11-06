@@ -3,9 +3,12 @@
 
 int main(){
 
-    int x = 5, y = 6, z = 50;
-    
-    printf("%d", x + y + z);
+    //maneira correta
+    int minutosPorHora = 60;
+    //incorreta
+    // int mph = 60;
+
+    printf("Uma hora tem %d minutos.", minutosPorHora);
 
     return 0;
 }
