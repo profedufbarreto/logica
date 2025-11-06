@@ -3,14 +3,13 @@
 
 int main(){
 
-    int itens = 50;
-    float custoPorItens = 9.99;
-    float custoTotal = itens * custoPorItens;
-    char moeda[2] = "R$";
+    int x = 5;
+    int y = 2;
 
-    printf("Quantidade de itens: %d\n ", itens);
-    printf("Custo por itens %s %.2f\n ", moeda, custoPorItens);
-    printf("Custo total dos itens %s %.2f ", moeda, custoTotal);
+    printf("%d", x > y);
+    printf("\n%d", x == y);
+    printf("\n%d", x <= y);
+    printf("\n%d", x != y);
 
     return 0;
 }
