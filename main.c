@@ -3,16 +3,11 @@
 
 int main(){
 
-    int x = 5;
-    int y = 2;
+    int resultado1 = 2 + 3 * 4;
+    int resultado2 = (2 + 3) * 4;
 
-    printf("%d", x > y);
-    printf("\n%d", x == y);
-    printf("\n%d", x <= y);
-    printf("\n%d", x != y);
-    printf("\n%d", x < y && x > 4);
-    printf("\n%d", x == y || y > 0);
-    printf("\n%d", !(x > 4));
+    printf("\n%d", resultado1);
+    printf("\n%d", resultado2);
 
     return 0;
 }
