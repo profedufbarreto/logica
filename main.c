@@ -6,12 +6,11 @@ int main(){
     int itens = 50;
     float custoPorItens = 9.99;
     float custoTotal = itens * custoPorItens;
-    char moeda = '$';
-    char reais = 'R';
+    char moeda[2] = "R$";
 
     printf("Quantidade de itens: %d\n ", itens);
-    printf("Custo por itens %c%c %.2f\n ", reais, moeda, custoPorItens);
-    printf("Custo total dos itens %c%c %.2f ", reais, moeda, custoTotal);
+    printf("Custo por itens %s %.2f\n ", moeda, custoPorItens);
+    printf("Custo total dos itens %s %.2f ", moeda, custoTotal);
 
     return 0;
 }
