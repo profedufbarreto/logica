@@ -3,7 +3,8 @@
 
 int main(){
 
-    double a, b, c, media;
+    int a, b, c, d;
+    double produto;
 
     std::cout<<"Digite um valor para A: "<<std::endl;
     std::cin>>a;
@@ -14,9 +15,12 @@ int main(){
     std::cout<<"Digite um valor para C: "<<std::endl;
     std::cin>>c;
 
-    media = ((a * 2) + (b * 3) + (c * 5)) / (2 + 3 + 5);
+    std::cout<<"Digite um valor para D: "<<std::endl;
+    std::cin>>d;
 
-    std::cout<<"\nA média é: "<<std::fixed<<std::setprecision(1)<<media<<std::endl;
+    produto = ((a * b) - (c * d));
+
+    std::cout<<"A diferença é de: "<<produto<<std::endl;
 
     return 0;
 }
