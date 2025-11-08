@@ -1,9 +1,9 @@
 #include<iostream>
-
+#include<iomanip>
 
 int main(){
 
-    float a, b, media;
+    double a, b, c, media;
 
     std::cout<<"Digite um valor para A: "<<std::endl;
     std::cin>>a;
@@ -11,9 +11,12 @@ int main(){
     std::cout<<"Digite um valor para B: "<<std::endl;
     std::cin>>b;
 
-    media = (a + b)/2;
+    std::cout<<"Digite um valor para C: "<<std::endl;
+    std::cin>>c;
 
-    std::cout<<"\nA média é: "<<media<<std::endl;
+    media = ((a * 2) + (b * 3) + (c * 5)) / (2 + 3 + 5);
+
+    std::cout<<"\nA média é: "<<std::fixed<<std::setprecision(1)<<media<<std::endl;
 
     return 0;
 }
