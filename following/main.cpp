@@ -1,19 +1,19 @@
 #include<iostream>
-#include<iomanip>
+
 
 int main(){
 
-    float area;
-    float n = 3.14159;
-    float raio;
+    int a, b, prod;
 
-    std::cout<<"Digite um valor para raio: "<<std::endl;
-    std::cin>>raio;
+    std::cout<<"Digite um valor para A: "<<std::endl;
+    std::cin>>a;
 
-    area = n * (raio * raio);
+    std::cout<<"Digite um valor para B: "<<std::endl;
+    std::cin>>b;
 
-    std::cout<<"O valor da área é de: "<<std::fixed<<
-    std::setprecision(2)<<area<<std::endl;
+    prod = a * b;
+
+    std::cout<<"\nPROD = "<<prod<<std::endl;
 
     return 0;
 }
