@@ -3,7 +3,7 @@
 
 int main(){
 
-    int a, b, prod;
+    float a, b, media;
 
     std::cout<<"Digite um valor para A: "<<std::endl;
     std::cin>>a;
@@ -11,9 +11,9 @@ int main(){
     std::cout<<"Digite um valor para B: "<<std::endl;
     std::cin>>b;
 
-    prod = a * b;
+    media = (a + b)/2;
 
-    std::cout<<"\nPROD = "<<prod<<std::endl;
+    std::cout<<"\nA média é: "<<media<<std::endl;
 
     return 0;
 }
