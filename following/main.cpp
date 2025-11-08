@@ -3,24 +3,22 @@
 
 int main(){
 
-    int a, b, c, d;
-    double produto;
+    int id, horas;
+    float valorHora, salario;
 
-    std::cout<<"Digite um valor para A: "<<std::endl;
-    std::cin>>a;
+    std::cout<<"Digite o ID de um funcionário: "<<std::endl;
+    std::cin>>id;
 
-    std::cout<<"Digite um valor para B: "<<std::endl;
-    std::cin>>b;
+    std::cout<<"Digite a quantidade de horas que o funcionário trabalhou: "<<std::endl;
+    std::cin>>horas;
 
-    std::cout<<"Digite um valor para C: "<<std::endl;
-    std::cin>>c;
+    std::cout<<"Digite o valor hora do funcionário: "<<std::endl;
+    std::cin>>valorHora;
 
-    std::cout<<"Digite um valor para D: "<<std::endl;
-    std::cin>>d;
+    salario = horas * valorHora;
 
-    produto = ((a * b) - (c * d));
-
-    std::cout<<"A diferença é de: "<<produto<<std::endl;
+    std::cout<<"ID do funcionário: "<<id<<std::endl;
+    std::cout<<"R$: "<<std::fixed<<std::setprecision(2)<<salario<<std::endl;
 
     return 0;
 }
