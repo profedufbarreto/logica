@@ -4,16 +4,19 @@
 
 int main(){
 
-    float salario, novoSalario;
-    const float aumento = 1.15;
+    float km, litros, media;
 
-    std::cout<<"Digite o salário atual: "<<std::endl;
-    std::cin>>salario;
+    std::cout<<"Digite a quilometragem percorrida: "<<std::endl;
+    std::cin>>km;
 
-    novoSalario = (salario * aumento);
+    std::cout<<"Digite a quantidade de litros usada: "<<std::endl;
+    std::cin>>litros;
 
-    std::cout<<"O novo salário ficou de R$ "<<std::fixed<<
-        std::setprecision(2)<<novoSalario<<std::endl;
+    media = km / litros;
+
+    std::cout<<"\nVocê percorreu: "<<km<<" km"<<std::endl;
+    std::cout<<"\nVocê usou: "<<litros<<" litros"<<std::endl;
+    std::cout<<"\nA média de consumo foi de: "<<media<<" km/litros"<<std::endl;
 
     return 0;
 }
