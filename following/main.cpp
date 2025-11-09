@@ -1,24 +1,21 @@
 #include<iostream>
 #include<iomanip>
 
+
 int main(){
 
-    int id, horas;
-    float valorHora, salario;
+    float km;
+    const int metros = 1000;
+    float medida;
 
-    std::cout<<"Digite o ID de um funcionário: "<<std::endl;
-    std::cin>>id;
+    std::cout<<"Quantos KM você fez: "<<std::endl;
+    std::cin>>km;
 
-    std::cout<<"Digite a quantidade de horas que o funcionário trabalhou: "<<std::endl;
-    std::cin>>horas;
+    medida = km * metros;
 
-    std::cout<<"Digite o valor hora do funcionário: "<<std::endl;
-    std::cin>>valorHora;
-
-    salario = horas * valorHora;
-
-    std::cout<<"ID do funcionário: "<<id<<std::endl;
-    std::cout<<"R$: "<<std::fixed<<std::setprecision(2)<<salario<<std::endl;
+    std::cout<<std::fixed<<
+        std::setprecision(2)<<
+            medida<<" metros."<<std::endl;
 
     return 0;
 }
