@@ -4,18 +4,24 @@
 
 int main(){
 
-    float km;
-    const int metros = 1000;
-    float medida;
+    float totalCompra, pagoCliente, troco;
 
-    std::cout<<"Quantos KM você fez: "<<std::endl;
-    std::cin>>km;
+    std::cout<<"O total da compra foi de: R$ "<<std::endl;
+    std::cin>>totalCompra;
 
-    medida = km * metros;
+    std::cout<<"Valor entregue pelo cliente foi de: R$ "<<std::endl;
+    std::cin>>pagoCliente;
 
-    std::cout<<std::fixed<<
-        std::setprecision(2)<<
-            medida<<" metros."<<std::endl;
+    troco = totalCompra - pagoCliente;
+
+    std::cout<<"\nO total da compra foi de R$ "<<std::fixed<<
+        std::setprecision(2)<<totalCompra<<std::endl;
+    
+        std::cout<<"\nO valor pago pelo cliente foi de R$ "<<std::fixed<<
+        std::setprecision(2)<<pagoCliente<<std::endl;
+    
+    std::cout<<"\nO troco será de R$ "<<std::fixed<<
+        std::setprecision(2)<<troco<<std::endl;
 
     return 0;
 }
