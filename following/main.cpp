@@ -4,28 +4,28 @@
 
 int main(){
 
-    float nota1, nota2, nota3, media;
+    float valorDaCompra;
+    float valorFinal;
 
-    std::cout<<"Digite a primeira nota: "<<std::endl;
-    std::cin>>nota1;
+    std::cout<<"Digite o valor da compra R$: "<<std::endl;
+    std::cin>>valorDaCompra;
 
-    std::cout<<"Digite a segunda nota: "<<std::endl;
-    std::cin>>nota2;
-
-    std::cout<<"Digite a terceira nota: "<<std::endl;
-    std::cin>>nota3;
-
-    media = (nota1 + nota2 + nota3)/3;
-
-    if(media > 7){
-        std::cout<<std::fixed<<
-        std::setprecision(2)<<media<<"! Aprovado(a)"<<std::endl;
-    }else if(media < 7 && media >= 5){
-        std::cout<<std::fixed<<
-        std::setprecision(2)<<media<<"! Recuperação"<<std::endl;
+    if(valorDaCompra > 200){
+        valorFinal = valorDaCompra * 0.90;
+        std::cout<<"\nO valor da compra foi de R$ "<<
+            std::fixed<<std::setprecision(2)<<
+                valorDaCompra<<std::endl;
+        std::cout<<"\nCom desconto aplicado de 10%, você pagará R$ "<<
+            std::fixed<<std::setprecision(2)<<
+                valorFinal<<std::endl;
     }else{
-        std::cout<<std::fixed<<
-        std::setprecision(2)<<media<<"! Reprovado"<<std::endl;
+        valorFinal = valorDaCompra * 0.95;
+        std::cout<<"\nO valor da compra foi de R$ "<<
+            std::fixed<<std::setprecision(2)<<
+                valorDaCompra<<std::endl;
+        std::cout<<"\nCom desconto aplicado de 5%, você pagará R$ "<<
+            std::fixed<<std::setprecision(2)<<
+                valorFinal<<std::endl;
     }
 
     return 0;
