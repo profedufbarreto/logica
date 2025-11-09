@@ -1,31 +1,28 @@
 #include<iostream>
 #include<iomanip>
-
+#include<math.h>
 
 int main(){
 
-    float valorDaCompra;
-    float valorFinal;
+    float peso, altura, imc, resultado;
 
-    std::cout<<"Digite o valor da compra R$: "<<std::endl;
-    std::cin>>valorDaCompra;
+    std::cout<<"Digite o peso: "<<std::endl;
+    std::cin>>peso;
 
-    if(valorDaCompra > 200){
-        valorFinal = valorDaCompra * 0.90;
-        std::cout<<"\nO valor da compra foi de R$ "<<
-            std::fixed<<std::setprecision(2)<<
-                valorDaCompra<<std::endl;
-        std::cout<<"\nCom desconto aplicado de 10%, você pagará R$ "<<
-            std::fixed<<std::setprecision(2)<<
-                valorFinal<<std::endl;
+    std::cout<<"Digite a altura: "<<std::endl;
+    std::cin>>altura;
+
+    imc = peso / std::pow(altura, 2);
+
+    if(imc < 18.5){
+        std::cout<<imc<<std::endl;
+        std::cout<<"Você está abaixo do peso!"<<std::endl;
+    }else if(imc < 18.5 && imc > 25){
+        std::cout<<imc<<std::endl;
+        std::cout<<"Peso normal!"<<std::endl;
     }else{
-        valorFinal = valorDaCompra * 0.95;
-        std::cout<<"\nO valor da compra foi de R$ "<<
-            std::fixed<<std::setprecision(2)<<
-                valorDaCompra<<std::endl;
-        std::cout<<"\nCom desconto aplicado de 5%, você pagará R$ "<<
-            std::fixed<<std::setprecision(2)<<
-                valorFinal<<std::endl;
+        std::cout<<imc<<std::endl;
+        std::cout<<"Acima do peso!"<<std::endl;
     }
 
     return 0;
