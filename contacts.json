@@ -1,0 +1,23 @@
+{
+    "Contato 1":{
+        "nome": "Eduardo Filippsen Barreto",
+        "email": "efbarreto@gmail.com",
+        "filhos": null
+    },
+    "Contato 2":{
+        "nome": "Angélica Silva",
+        "email": "agsilva@gmail.com",
+        "filhos":[
+            "Pierre",
+            "Manoel"
+        ]
+    },
+    "Contato 3":{
+        "nome": "Carlos Roberto",
+        "email": "cacaroberto@gmail.com",
+        "filhos": [
+            "Tamara",
+            "Joana"
+        ]
+    }
+}
