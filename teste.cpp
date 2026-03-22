@@ -2,17 +2,13 @@
 
 int main(){
 
-    float area;
-    float n = 3.14159;
-    float raio;
+    const int num = 5;
 
-    std::cout<<"Digite um valor para raio: "<<std::endl;
-    std::cin>>raio;
+    std::cout<<"Fazendo teste!"<<std::endl;
 
-    area = n * (raio * raio);
+    num = 3;
 
-    std::cout<<"O valor da área é de: "<<std::fixed<<
-    std::setprecision(2)<<area<<std::endl;
+    std::cout<<num<<std::endl;
 
     return 0;
 }

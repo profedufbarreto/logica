@@ -1,7 +1,6 @@
-a = 3
-b = 5
-c = 2
+media = (a + b)/2
 
-soma = a + b + c
+a = 4
+b = 2
 
-print(f"O resultado é {soma}!")
+print(f"O resultado da média é {media}")
