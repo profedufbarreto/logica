@@ -2,13 +2,11 @@
 
 int main(){
 
-    const int num = 5;
+   int a = 10;
+   int b = 7;
 
-    std::cout<<"Fazendo teste!"<<std::endl;
-
-    num = 3;
-
-    std::cout<<num<<std::endl;
+   std::cout<<(a > b && a + b > 17)<<std::endl;
+    
 
     return 0;
 }
