@@ -2,10 +2,16 @@
 
 int main(){
 
-   int a = 10;
-   int b = 7;
+    int a, b;
 
-   std::cout<<(a > b && a + b > 17)<<std::endl;
+    std::cout<<"Digite um valor para a: "<<std::endl;
+    std::cin>>a;
+
+    std::cout<<"Digite um valor para b: "<<std::endl;
+    std::cin>>b;
+
+    std::cout<<(a != b)<<std::endl;
+
     
 
     return 0;
