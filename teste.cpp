@@ -9,6 +9,7 @@ int main(){
     std::cin>>nome;
 
     std::cout<<nome.size()<<std::endl;
+    std::cout<<nome.length()<<std::endl;
 
 
     return 0;
