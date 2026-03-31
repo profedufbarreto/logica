@@ -1,11 +1,14 @@
 #include<iostream>
+#include<string>
 
 int main(){
 
-    int a = 5;
-    int b = ++a;
+    std::string nome;
 
-    std::cout<<b+b<<std::endl;
+    std::cout<<"Digite o seu nome: "<<std::endl;
+    std::cin>>nome;
+
+    std::cout<<nome.size()<<std::endl;
 
 
     return 0;
