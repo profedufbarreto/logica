@@ -1,16 +1,12 @@
 #include<iostream>
-#include<string>
 
 int main(){
 
-    std::string nome;
+    int result1 = 4 + 4 * 2;
+    int result2 = 4 / 4 * 2;
 
-    std::cout<<"Digite o seu nome: "<<std::endl;
-    std::cin>>nome;
-
-    std::cout<<nome.size()<<std::endl;
-    std::cout<<nome.length()<<std::endl;
-
+    std::cout<<result1<<std::endl;
+    std::cout<<result2<<std::endl;
 
     return 0;
 }
