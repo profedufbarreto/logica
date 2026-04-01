@@ -2,16 +2,14 @@
 
 int main(){
 
-    int result1 = 4 + 4 * 2;
-    int result2 = 4 / 4 * 2;
-    int result3 = (4 + 4) * 2;
-    int result4 = (4 * 3) / 4;
+    int idade;
 
-    std::cout<<result1<<std::endl;
-    std::cout<<result2<<std::endl;
-    std::cout<<result3<<std::endl;
-    std::cout<<result4<<std::endl;
+    std::cout<<"Digite a sua idade: "<<std::endl;
+    std::cin>>idade;
 
+    bool ehMaior = (idade >= 18);
+
+    std::cout<<ehMaior<<std::endl;
 
     return 0;
 }
