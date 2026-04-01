@@ -1,20 +1,18 @@
 #include<iostream>
+#include<string>
 
 int main(){
 
-    bool teste;
-    int idade;
+    std::string nome, sobrenome;
 
-    std::cout<<"Digite sua idade: "<<std::endl;
-    std::cin>>idade;
+    std::cout<<"Digite seu nome: "<<std::endl;
+    std::cin>>nome;
 
-    if(idade >= 18){
-        teste = true;
-        std::cout<<teste<<std::endl;
-    }else{
-        teste = false;
-        std::cout<<teste<<std::endl;
-    }
+    std::cout<<"Digite seu sobrenome: "<<std::endl;
+    std::cin>>sobrenome;
+
+    std::cout<<nome + " " + sobrenome<<std::endl;
+
 
     return 0;
 }
