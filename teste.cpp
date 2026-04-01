@@ -2,14 +2,19 @@
 
 int main(){
 
+    bool teste;
     int idade;
 
-    std::cout<<"Digite a sua idade: "<<std::endl;
+    std::cout<<"Digite sua idade: "<<std::endl;
     std::cin>>idade;
 
-    bool ehMaior = (idade >= 18);
-
-    std::cout<<ehMaior<<std::endl;
+    if(idade >= 18){
+        teste = true;
+        std::cout<<teste<<std::endl;
+    }else{
+        teste = false;
+        std::cout<<teste<<std::endl;
+    }
 
     return 0;
 }
