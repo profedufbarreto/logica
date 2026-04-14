@@ -1,18 +1,24 @@
 #include<iostream>
 #include<string>
 
-std::string saudacao(std::string nome){
-    return "Bem-vindo " + nome;
+void registro(){
+
+    std::string nome;
+    float altura;
+
+    std::cout<<"Digite seu nome: "<<std::endl;
+    std::cin>>nome;
+
+    std::cout<<"Digite sua altura: "<<std::endl;
+    std::cin>>altura;
+
+    std::cout<<"Seja bem-vindo "<<nome<<std::endl;
+    std::cout<<"Você mede "<<altura<<"m."<<std::endl;
 }
 
 int main(){
 
-    std::string nome;
-    
-    std::cout<<"Digite o seu nome: "<<std::endl;
-    std::cin>>nome;
-
-    std::cout<<saudacao(nome)<<std::endl;
+    registro();
 
     return 0;
 }
