@@ -1,18 +1,23 @@
 #include<iostream>
-#include<string>
 
-    void saudacao(std::string nome){
-        std::cout<<"Olá "<<nome<<"!!"<<std::endl;
-    }
+int somar(int a, int b){
+    return a + b;
+}
+    
 
 int main(){
 
-    std::string nome;
+    int a, b, resultado;
 
-    std::cout<<"Digite um nome: "<<std::endl;
-    std::cin>>nome;
+    std::cout<<"Digite um valor para a: "<<std::endl;
+    std::cin>>a;
 
-    saudacao(nome);
+    std::cout<<"Digite um valor para b: "<<std::endl;
+    std::cin>>b;
+
+    resultado = somar(a, b);
+
+    std::cout<<"O resultado final é: "<<resultado<<std::endl;
 
 
     return 0;
