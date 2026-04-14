@@ -1,16 +1,16 @@
 #include<iostream>
 #include<string>
 
-void saudacao(std::string nome, float altura, int idade){
-    std::cout<<"Olá "<<nome<<" Seja bem-vindo(a) a nossa escola!"<<std::endl;
-    std::cout<<"Medindo "<<altura<<"m."<<std::endl;
-}
-
-int main(){
-
     std::string nome;
     float altura;
     int idade;
+
+    void saudacao(){
+    std::cout<<"Olá "<<nome<<" Seja bem-vindo(a) a nossa escola!"<<std::endl;
+    std::cout<<"Medindo "<<altura<<"m."<<std::endl;
+    }
+
+int main(){
 
     std::cout<<"Digite seu nome: "<<std::endl;
     std::cin>>nome;
@@ -24,13 +24,13 @@ int main(){
     if(idade < 0){
         std::cout<<"Idade inválida!"<<std::endl;
     }else if(idade <= 12){
-        saudacao(nome, altura, idade);
+        saudacao();
         std::cout<<"Você está na turma Infantil A!"<<std::endl;
     }else if(idade <= 18){
-        saudacao(nome, altura, idade);
+        saudacao();
         std::cout<<"Você está na turma Juvenil!"<<std::endl;
     }else{
-        saudacao(nome, altura, idade);
+        saudacao();
         std::cout<<"Você está na turma Adulto!"<<std::endl;
     }
 
