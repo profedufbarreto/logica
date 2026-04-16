@@ -1,23 +1,20 @@
 #include<iostream>
-#include<string>
-#include <tuple>
+#include<thread>
+#include<chrono>
 
 int main(){
 
-    std::tuple<std::string, int, float> person;
+    for(int i = 1; i <= 12; ++i){
+        std::cout<<"Minuto: "<<i<<std::endl;
+    
+        for(int j = 1; j <= 60; ++j){
+            std::cout<<"Segundo: "<<j<<std::endl;
 
-    std::cout<<"Digite o nome para o usuário: "<<std::endl;
-    std::cin>>std::get<0>(person);
-
-    std::cout<<"Digite a idade para o usuário: "<<std::endl;
-    std::cin>>std::get<1>(person);
-
-    std::cout<<"Digite a altura para o usuário: "<<std::endl;
-    std::cin>>std::get<2>(person);
-
-    std::cout<<"O nome do usuário é: "<<std::get<0>(person)<<std::endl;
-    std::cout<<std::get<1>(person)<<" anos."<<std::endl;
-    std::cout<<"Medindo: "<<std::get<2>(person)<<"."<<std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
+    }
+    
+    
 
     return 0;
 }
